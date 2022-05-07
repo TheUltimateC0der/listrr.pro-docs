@@ -1,9 +1,21 @@
 site_name: Docs
 site_url: https://docs.listrr.pro/
-repo_url: https://github.com/TheUltimateC0der/listrr.pro
-edit_uri: https://github.com/TheUltimateC0der/listrr.pro-docs
+repo_url: https://github.com/TheUltimateC0der/listrr.pro-docs
+edit_uri: edit/master/docs
 site_description: Documentation of all listrr.pro features and its api
+copyright: Copyright &copy; 2018 - 2022 listrr.pro
 plugins:
+  - rss
+  - blogging:
+      paging: false # Disable paging
+      time_format: '%d.%m.%Y - %H:%M:%S' # The format used to display the time
+      meta_time_format: '%d.%m.%Y - %H:%M:%S' # The format used to parse the time from meta
+      locale: en-US
+      dirs: # The directories to be included
+        - blog
+  - blog:
+      format: "(%d.%m.%Y)"
+      text-align: "right"
   - section-index
   - search
   - render_swagger
@@ -23,13 +35,26 @@ theme:
         name: Switch to light mode
   features:
     - navigation.expand
-    - navigation.instant
     - navigation.tracking
     - navigation.sections
     - navigation.indexes
     - navigation.top
+    - navigation.tabs
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.highlight
   - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+extra:
+  generator: false
+
+nav:
+  - Home: index.md
+  - Blog: /blog
+  - Filters: /filters
+  - API: /api
+  
