@@ -1,1 +1,115 @@
 # Show filters
+
+- Actor
+    - Character name
+    - Gender
+    - Name
+    - Popularity
+- Aggregated Actor
+    - Character name
+    - Gender
+    - Name
+    - Popularity
+- Aggregated Crew
+    - Department
+    - Gender
+    - Job
+    - Name
+    - Popularity
+- Alternative Title
+    - Country
+    - Title
+    - Type
+- Content rating
+    - Country
+    - Rating
+- Created by
+    - Name
+    - Name
+- Crew
+    - Department
+    - Gender
+    - Job
+    - Name
+    - Popularity
+- Episode
+    - Runtime
+- Episode groups
+    - Description
+    - Episode count
+    - Group count
+    - Name
+    - Name
+    - Network
+    - Network country
+- External Id
+    - Facebook
+    - Freebase Id
+    - Freebase mId
+    - IMDb
+    - Instagram
+    - TVDb
+    - TVRage
+    - Twitter
+- First air date
+- Genre
+    - Name
+- Homepage
+- InProduction
+- Keyword
+    - Name
+- Last air date
+- Last episode to air
+    - Airdate
+    - Episode number
+    - Name
+    - Overview
+    - Production code
+    - Season number
+- Name
+- Networks
+    - Country
+    - Name
+- Next episode to air
+    - Airdate
+    - Episode number
+    - Name
+    - Overview
+    - Production code
+    - Season number
+- Number of episodes
+- Number of seasons
+- Original Language
+- Original Name
+- Overview
+- Popularity
+- Production Company
+    - Country
+    - Name
+- Production Country
+    - Country
+    - Name
+- Seasons
+    - Air date
+    - Episode count
+    - Name
+    - Number
+- Spoken language
+    - Language
+    - Name
+- Status
+- Streaming Service
+    - Ads
+    - Buy
+    - Country
+    - Flatrate
+    - Free
+    - Rent
+- Tagline
+- Translation
+    - Country
+    - Language
+    - Name
+- Type
+- Vote average
+- Vote count

@@ -1,1 +1,74 @@
 # Movie filters
+
+- Actor
+    - Character name
+    - Gender
+    - Name
+    - Popularity
+- Alternative Title
+    - Country
+    - Title
+    - Type
+- Budget
+- Collection
+    - Name
+- Crew
+    - Department
+    - Gender
+    - Job
+    - Name
+    - Popularity
+- External Id
+    - Facebook
+    - IMDb
+    - Instagram
+    - Twitter
+- Genre
+    - Name
+- Homepage
+- IsAdult
+- Keyword
+    - Name
+- Original Language
+- Original Title
+- Overview
+- Popularity
+- Production Company
+    - Country
+    - Name
+- Production Country
+    - Country
+    - Name
+- Release
+    - Certification
+    - Country
+    - Primary
+- Release date
+- Release Date
+    - Certification
+    - Country
+    - Language
+    - Note
+    - Type
+- Revenue
+- Runtime
+- Spoken language
+    - Language
+    - Name
+- Status
+- Streaming Service
+    - Ads
+    - Buy
+    - Country
+    - Flatrate
+    - Free
+    - Rent
+- Tagline
+- Title
+- Translation
+    - Country
+    - Language
+    - Name
+- Video
+- Vote average
+- Vote count
