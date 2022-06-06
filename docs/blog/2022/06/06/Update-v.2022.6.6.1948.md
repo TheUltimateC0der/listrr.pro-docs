@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-# Update v.2022.6.1.248 is out now
+# Update v.2022.6.6.1948 is out now
 
 ## :rocket: New features :
 - A static list should now get better results when matching elements by `Name (Year)` pattern
