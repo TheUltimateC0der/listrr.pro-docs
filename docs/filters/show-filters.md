@@ -56,6 +56,7 @@
     - Name
 - Homepage
 - InProduction
+- IsAnime
 - Keyword
     - Name
 - Last air date
@@ -89,6 +90,13 @@
 - Production Country
     - Country
     - Name
+- Ratings
+    - IMDB
+        - average
+        - votes
+    - TMDB
+        - average
+        - votes
 - Seasons
     - Air date
     - Episode count

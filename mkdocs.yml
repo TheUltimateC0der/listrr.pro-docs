@@ -56,5 +56,6 @@ nav:
   - Home: index.md
   - Blog: /blog
   - Filters: /filters
+  - Services: /services
   - API: /api
   

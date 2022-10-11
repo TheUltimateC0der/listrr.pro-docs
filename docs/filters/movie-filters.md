@@ -27,6 +27,7 @@
     - Name
 - Homepage
 - IsAdult
+- IsAnime
 - Keyword
     - Name
 - Original Language
@@ -39,6 +40,13 @@
 - Production Country
     - Country
     - Name
+- Ratings
+    - IMDB
+        - average
+        - votes
+    - TMDB
+        - average
+        - votes
 - Release
     - Certification
     - Country
