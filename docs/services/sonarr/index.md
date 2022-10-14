@@ -12,4 +12,4 @@ This feature makes it easier for users with many lists to automatically add them
 
 ## How to add a list
 
-Take a look at the listrr.pro to Sonarr bridge. It will automatically import your lists into your Sonarr instance. https://github.com/TheUltimateC0der/listrr.pro.Sonarr
+Take a look at the listrr.pro to Sonarr bridge. It will automatically import your lists into your Sonarr instance. [https://github.com/TheUltimateC0der/listrr.pro.Sonarr](https://github.com/TheUltimateC0der/listrr.pro.Sonarr)
