@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://docs.listrr.pro/blog/">
       
       <link rel="icon" href="../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.6">
     
     
       
@@ -432,6 +432,7 @@
 
     .md-typeset .blog-pagination {
         display: inline-block;
+        margin-top: 20px;
     }
 
     .md-typeset .blog-pagination a {
@@ -536,7 +537,7 @@
         
     </p>
     <div class="blog-post-extra">
-        Published at: 14.10.2022 - 17:56:28
+        Published at: 16.10.2022 - 23:57:25
     </div>
     <hr />
 </div>
@@ -565,7 +566,7 @@
         
     </p>
     <div class="blog-post-extra">
-        Published at: 14.10.2022 - 17:56:28
+        Published at: 16.10.2022 - 23:57:25
     </div>
     <hr />
 </div>
@@ -594,7 +595,7 @@
         
     </p>
     <div class="blog-post-extra">
-        Published at: 14.10.2022 - 17:56:28
+        Published at: 16.10.2022 - 23:57:25
     </div>
     <hr />
 </div>
@@ -623,7 +624,7 @@
         
     </p>
     <div class="blog-post-extra">
-        Published at: 14.10.2022 - 17:56:28
+        Published at: 16.10.2022 - 23:57:25
     </div>
     <hr />
 </div>
@@ -652,7 +653,7 @@
         
     </p>
     <div class="blog-post-extra">
-        Published at: 14.10.2022 - 17:56:28
+        Published at: 16.10.2022 - 23:57:25
     </div>
     <hr />
 </div>
@@ -681,7 +682,36 @@
         
     </p>
     <div class="blog-post-extra">
-        Published at: 14.10.2022 - 17:56:28
+        Published at: 16.10.2022 - 23:57:25
+    </div>
+    <hr />
+</div>
+
+                
+            
+                
+                
+                
+                
+
+                
+                
+
+                
+                
+                    
+                
+                
+                <div class="blog-post">
+    <h3 class="blog-post-title">
+        <a class="link" href="https://docs.listrr.pro/blog/2022/10/17/Update-v.2022.10.16.2337/">Update v.2022.10.16.2337 is out now (17.10.2022)</a>
+    </h3>
+    
+    <p class="blog-post-description">
+        
+    </p>
+    <div class="blog-post-extra">
+        Published at: 16.10.2022 - 23:57:25
     </div>
     <hr />
 </div>
@@ -695,11 +725,14 @@
 <div class="blog-center blog-hidden">
     <div class="blog-pagination " id="blog-pagination">
         
-            <a class="page-number" href="#blog-p1">1</a>
+            
+                
+            
+            <a class="page-number" href="">1</a>
         
     </div>
     
-        <div>Total <b>6</b> posts.</div>
+        <div>Total <b>7</b> posts.</div>
     
 </div></p>
 
@@ -796,13 +829,15 @@ if (pagination) {
               // This is the destination page
               pages[j].className = pages[j].className.replace(" blog-hidden", "")
             }
-            scrollToTop();
           }
+          scrollToTop();
         }
       });
     }
     links[currentPage].className += " active"
-    links[currentPage].click();
+    if (currentPage > 0) {
+      links[currentPage].click();
+    }
   }
 }
 </script>
