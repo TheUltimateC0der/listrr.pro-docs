@@ -10,14 +10,14 @@
       
       
       
-        <link rel="canonical" href="https://docs.listrr.pro/filters/movie-filters/">
+        <link rel="canonical" href="https://docs.listrr.pro/filters/external-lists/">
       
       <link rel="icon" href="../../assets/logo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.7">
     
     
       
-        <title>Movie filters - Docs</title>
+        <title>External lists - Docs</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#movie-filters" class="md-skip">
+        <a href="#external-lists" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Movie filters
+              External lists
             
           </span>
         </div>
@@ -398,93 +398,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basic-filters" class="md-nav__link">
-    Basic filters
+  <a href="#what-are-external-lists" class="md-nav__link">
+    What are external lists ?
+  </a>
+  
+    <nav class="md-nav" aria-label="What are external lists ?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#include-external-lists" class="md-nav__link">
+    Include external lists
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#actor" class="md-nav__link">
-    Actor
+        
+          <li class="md-nav__item">
+  <a href="#exclude-external-lists" class="md-nav__link">
+    Exclude external lists
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#alternative-title" class="md-nav__link">
-    Alternative Title
+        
+          <li class="md-nav__item">
+  <a href="#what-does-dynamic-mean" class="md-nav__link">
+    What does dynamic mean?
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#crew" class="md-nav__link">
-    Crew
+        
+          <li class="md-nav__item">
+  <a href="#why-use-dynamic-lists" class="md-nav__link">
+    Why use dynamic lists?
+  </a>
+  
+    <nav class="md-nav" aria-label="Why use dynamic lists?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    Example 1
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#external-id" class="md-nav__link">
-    External Id
+        
+          <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    Example 2
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#production-company" class="md-nav__link">
-    Production Company
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#production-country" class="md-nav__link">
-    Production Country
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ratings" class="md-nav__link">
-    Ratings
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#release" class="md-nav__link">
-    Release
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#release-date" class="md-nav__link">
-    Release Date
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#spoken-language" class="md-nav__link">
-    Spoken language
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#streaming-service" class="md-nav__link">
-    Streaming Service
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#translation" class="md-nav__link">
-    Translation
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -502,509 +472,29 @@
                 
                   
 
-  <a href="https://github.com/TheUltimateC0der/listrr.pro-docs/edit/master/docs/filters/movie-filters.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/TheUltimateC0der/listrr.pro-docs/edit/master/docs/filters/external-lists.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="movie-filters">Movie filters</h1>
-<h2 id="basic-filters">Basic filters</h2>
-<table>
-<thead>
-<tr>
-<th>Filter name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Budget</td>
-<td>integer</td>
-<td>How much budget the movie had for production</td>
-</tr>
-<tr>
-<td>Collection - Name</td>
-<td>string</td>
-<td>The name of the collection a movie belongs to</td>
-</tr>
-<tr>
-<td>Genre - Name</td>
-<td>genre</td>
-<td>The genre of a movie</td>
-</tr>
-<tr>
-<td>Homepage</td>
-<td>string</td>
-<td>The homepage of the movie</td>
-</tr>
-<tr>
-<td>IsAdult</td>
-<td>bool</td>
-<td>If the movie is flagged as xxx content</td>
-</tr>
-<tr>
-<td>IsAnime</td>
-<td>bool</td>
-<td>If the movie is flagged as anime content</td>
-</tr>
-<tr>
-<td>Keyword - Name</td>
-<td>string</td>
-<td>A keyword the movie belongs to</td>
-</tr>
-<tr>
-<td>Original Language</td>
-<td>language</td>
-<td>The original language a movie was shot</td>
-</tr>
-<tr>
-<td>Original Title</td>
-<td>string</td>
-<td>The original title in the country the movie was released in</td>
-</tr>
-<tr>
-<td>Overview</td>
-<td>string</td>
-<td>A short overview about the movie</td>
-</tr>
-<tr>
-<td>Popularity</td>
-<td>decimal</td>
-<td>The popularity of the movie</td>
-</tr>
-<tr>
-<td>Release date</td>
-<td>date</td>
-<td>The exact release date of the movie</td>
-</tr>
-<tr>
-<td>Revenue</td>
-<td>integer</td>
-<td>The revenue a movie made</td>
-</tr>
-<tr>
-<td>Runtime</td>
-<td>integer</td>
-<td>The runtime of a movie in minutes</td>
-</tr>
-<tr>
-<td>Status</td>
-<td>status</td>
-<td>The release state of a movie</td>
-</tr>
-<tr>
-<td>Tagline</td>
-<td>string</td>
-<td>The tagline of the movie</td>
-</tr>
-<tr>
-<td>Title</td>
-<td>string</td>
-<td>The title of the movie</td>
-</tr>
-<tr>
-<td>Video</td>
-<td>bool</td>
-<td>If the movie is only a video instead of a full movie</td>
-</tr>
-</tbody>
-</table>
-<h2 id="actor">Actor</h2>
-<table>
-<thead>
-<tr>
-<th>Filter name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Actor - Character name</td>
-<td>string</td>
-<td>The name of the character an actor plays</td>
-</tr>
-<tr>
-<td>Actor - Gender</td>
-<td>gender</td>
-<td>The gender of the actor</td>
-</tr>
-<tr>
-<td>Actor - Name</td>
-<td>string</td>
-<td>The name of the actor</td>
-</tr>
-<tr>
-<td>Actor - Populatity</td>
-<td>decimal</td>
-<td>The popularity of the actor. Between 0-10</td>
-</tr>
-</tbody>
-</table>
-<h2 id="alternative-title">Alternative Title</h2>
-<table>
-<thead>
-<tr>
-<th>Filter name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Alternative Title - Country</td>
-<td>country</td>
-<td>The country where the alternative title is used</td>
-</tr>
-<tr>
-<td>Alternative Title - Title</td>
-<td>string</td>
-<td>The alternative title for a movie</td>
-</tr>
-<tr>
-<td>Alternative Title - Type</td>
-<td>string</td>
-<td>The type of title (e.g. working title, DVD title, modern title)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="crew">Crew</h2>
-<table>
-<thead>
-<tr>
-<th>Filter name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Crew - Department</td>
-<td>string</td>
-<td>The department in which the crew member has worked</td>
-</tr>
-<tr>
-<td>Crew - Gender</td>
-<td>gender</td>
-<td>The gender of the crew member</td>
-</tr>
-<tr>
-<td>Crew - Job</td>
-<td>string</td>
-<td>The job of the crew member</td>
-</tr>
-<tr>
-<td>Crew - Name</td>
-<td>string</td>
-<td>The name of the crew member</td>
-</tr>
-<tr>
-<td>Crew - Popularity</td>
-<td>decimal</td>
-<td>The popularity of the crew member</td>
-</tr>
-</tbody>
-</table>
-<h2 id="external-id">External Id</h2>
-<table>
-<thead>
-<tr>
-<th>Filter name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>External Id - Facebook</td>
-<td>string</td>
-<td>The facebook page handle</td>
-</tr>
-<tr>
-<td>External Id - Twitter</td>
-<td>string</td>
-<td>The twitter handle</td>
-</tr>
-<tr>
-<td>External Id - Instagram</td>
-<td>string</td>
-<td>The instagram handle</td>
-</tr>
-<tr>
-<td>External Id - IMDb</td>
-<td>string</td>
-<td>The id from https://www.imdb.com/</td>
-</tr>
-<tr>
-<td>External Id - TMDb</td>
-<td>string</td>
-<td>The id from https://www.themoviedb.org/</td>
-</tr>
-<tr>
-<td>External Id - TvRage</td>
-<td>string</td>
-<td>The id from https://www.tvrage.com/</td>
-</tr>
-<tr>
-<td>External Id - Trakt</td>
-<td>string</td>
-<td>The id from https://trakt.tv/</td>
-</tr>
-</tbody>
-</table>
-<h2 id="production-company">Production Company</h2>
-<table>
-<thead>
-<tr>
-<th>Filter name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Production Company - Country</td>
-<td>country</td>
-<td>The country where a production company is based</td>
-</tr>
-<tr>
-<td>Production Company - Name</td>
-<td>string</td>
-<td>The name of the production company</td>
-</tr>
-</tbody>
-</table>
-<h2 id="production-country">Production Country</h2>
-<table>
-<thead>
-<tr>
-<th>Filter name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Production Country - Country</td>
-<td>country</td>
-<td>The country where the movie was produced</td>
-</tr>
-<tr>
-<td>Production Country - Name</td>
-<td>string</td>
-<td>The name of the country where the movie was produced</td>
-</tr>
-</tbody>
-</table>
-<h2 id="ratings">Ratings</h2>
-<table>
-<thead>
-<tr>
-<th>Filter name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ratings - IMDb average</td>
-<td>decimal</td>
-<td>The average of all votes on https://imdb.com/</td>
-</tr>
-<tr>
-<td>Ratings - IMDb votes</td>
-<td>integer</td>
-<td>The amount of votes on https://imdb.com/</td>
-</tr>
-<tr>
-<td>Ratings - TMDb average</td>
-<td>decimal</td>
-<td>The average of all votes on https://www.themoviedb.org/</td>
-</tr>
-<tr>
-<td>Ratings - TMDb votes</td>
-<td>integer</td>
-<td>The amount of votes on https://www.themoviedb.org/</td>
-</tr>
-<tr>
-<td>Ratings - Trakt average</td>
-<td>decimal</td>
-<td>The average of all votes on https://trakt.tv/</td>
-</tr>
-<tr>
-<td>Ratings - Trakt votes</td>
-<td>integer</td>
-<td>The amount of votes on https://trakt.tv/</td>
-</tr>
-<tr>
-<td>Ratings - Metacritic average</td>
-<td>decimal</td>
-<td>The average of all votes on https://www.metacritic.com/</td>
-</tr>
-<tr>
-<td>Ratings - Rotten average</td>
-<td>decimal</td>
-<td>The amount of votes on https://www.rottentomatoes.com/</td>
-</tr>
-</tbody>
-</table>
-<h2 id="release">Release</h2>
-<table>
-<thead>
-<tr>
-<th>Filter name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Release - Certification</td>
-<td>certification</td>
-<td>The certification of the release</td>
-</tr>
-<tr>
-<td>Release - Country</td>
-<td>country</td>
-<td>The country of the release</td>
-</tr>
-<tr>
-<td>Release - Primary</td>
-<td>bool</td>
-<td>Flag if this release is a primary release</td>
-</tr>
-</tbody>
-</table>
-<h2 id="release-date">Release Date</h2>
-<table>
-<thead>
-<tr>
-<th>Filter name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Release Date - Certification</td>
-<td>certification</td>
-<td>The certification for the release date</td>
-</tr>
-<tr>
-<td>Release Date - Country</td>
-<td>country</td>
-<td>The country for the release date</td>
-</tr>
-<tr>
-<td>Release Date - Language</td>
-<td>language</td>
-<td>The language for the release date</td>
-</tr>
-<tr>
-<td>Release Date - Note</td>
-<td>string</td>
-<td>A note that has been added to the release</td>
-</tr>
-<tr>
-<td>Release Date - Type</td>
-<td>releaseType</td>
-<td>The type of release for a release date</td>
-</tr>
-</tbody>
-</table>
-<h2 id="spoken-language">Spoken language</h2>
-<table>
-<thead>
-<tr>
-<th>Filter name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Spoken Language - Language</td>
-<td>language</td>
-<td>Indicates in what dubs a movie has</td>
-</tr>
-<tr>
-<td>Spoken Language - Name</td>
-<td>country</td>
-<td>The name of the language</td>
-</tr>
-</tbody>
-</table>
-<h2 id="streaming-service">Streaming Service</h2>
-<table>
-<thead>
-<tr>
-<th>Filter name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Streaming Service - Ads - Name</td>
-<td>streaming service</td>
-<td>The name of the streaming service where a movie could be watched with ads</td>
-</tr>
-<tr>
-<td>Streaming Service - Buy - Name</td>
-<td>streaming service</td>
-<td>The name of the streaming service where a movie could be bought</td>
-</tr>
-<tr>
-<td>Streaming Service - Flatrate - Name</td>
-<td>streaming service</td>
-<td>The name of the streaming service where a movie is included the mothly fee without extra cost</td>
-</tr>
-<tr>
-<td>Streaming Service - Free - Name</td>
-<td>streaming service</td>
-<td>The name of the streaming service where a movie could be watched for free</td>
-</tr>
-<tr>
-<td>Streaming Service - Rent - Name</td>
-<td>streaming service</td>
-<td>The name of the streaming service where a movie could be rented</td>
-</tr>
-<tr>
-<td>Streaming Service - Country</td>
-<td>country</td>
-<td>The country a movie is available for a streaming service</td>
-</tr>
-</tbody>
-</table>
-<h2 id="translation">Translation</h2>
-<table>
-<thead>
-<tr>
-<th>Filter name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Translation - Country</td>
-<td>country</td>
-<td>The country a movie has been translated for</td>
-</tr>
-<tr>
-<td>Translation - Language</td>
-<td>language</td>
-<td>The language a movie has been translated for</td>
-</tr>
-<tr>
-<td>Translation - Name</td>
-<td>name</td>
-<td>The name of the language a movie has been translated for</td>
-</tr>
-</tbody>
-</table>
+<h1 id="external-lists">External lists</h1>
+<h2 id="what-are-external-lists">What are external lists ?</h2>
+<p>These lists are prefiltered, and come from external sources like IMDb, TMDb, Trakt or other metadata providers. Some of these lists are even genrated by listrr.pro. They are updated regularly, so they always contain the latest content from their source. Some of these lists are completely dynamic.</p>
+<h3 id="include-external-lists">Include external lists</h3>
+<p>All the lists selected will be used for further filtering. So the filters you apply, ONLY apply to the content that is present in these lists.</p>
+<h3 id="exclude-external-lists">Exclude external lists</h3>
+<p>The items in these lists will be excluded from your list.</p>
+<h3 id="what-does-dynamic-mean">What does dynamic mean?</h3>
+<p>Dynamic means, these lists are valid for the current year/month/week. So the content is always for the current year/month/week, and gets updated accordingly.</p>
+<h3 id="why-use-dynamic-lists">Why use dynamic lists?</h3>
+<p>They are there to make your life a lot easier. </p>
+<h4 id="example-1">Example 1</h4>
+<p>You want to create a list that matches the new released movies each month. Without External lists, you would either create a seperate list for each month, or you would create one list, and edit it every month to match the current month.</p>
+<p>If you use the <code>This month - New released movies</code> external list, you simply have to create a single list. This list will always match the current months released movies.</p>
+<h4 id="example-2">Example 2</h4>
+<p>You want to create a list that matches the <code>IMDB: Top Rated TV Shows</code> and filter only for <code>Gerne - Name = Action</code>.</p>
+<p>Without using External lists, this isnt even possbile.</p>
 
 
 
