@@ -6,12 +6,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.listrr.pro/api/</loc>
+         <loc>https://docs.listrr.pro/blog-tags/</loc>
          <lastmod>2022-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.listrr.pro/blog/</loc>
+         <lastmod>2022-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.listrr.pro/api/</loc>
          <lastmod>2022-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -66,7 +71,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.listrr.pro/blog/2022/11/03/Update-v.2022.11.3.2300/</loc>
+         <loc>https://docs.listrr.pro/blog/2022/11/04/Update-v.2022.11.3.2300/</loc>
          <lastmod>2022-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
