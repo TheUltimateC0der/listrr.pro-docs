@@ -1,7 +1,11 @@
 ---
+title: V2 is finally happening!
+author: Ultimate
+tags:
+  - V2
+  - Announcement
 hide:
   - navigation
-  - toc
 ---
 
 # V2 is finally happening! :rocket:

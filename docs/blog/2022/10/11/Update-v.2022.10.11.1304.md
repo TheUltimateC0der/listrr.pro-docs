@@ -1,7 +1,11 @@
 ---
+title: Update v.2022.10.11.1304 is out now
+author: Ultimate
+tags:
+  - V2
+  - Patchnotes
 hide:
   - navigation
-  - toc
 ---
 
 # Update v.2022.10.11.1304 is out now
@@ -12,7 +16,7 @@ This update includes two new metadata providers for ratings. A metadata provider
 
 There are also new donor perks for all the awesome people that donate! So check out https://v2.listrr.pro/Donor/WhyDonate
 
-## :rocket: New features :
+## :rocket: New features
 - Dropped support for creating lists on trakt.tv. Take a look [here](https://github.com/trakt/api-help/discussions/350){:target="_blank"} to see why
 - Added support for [listrr.pro.Sonarr](https://github.com/TheUltimateC0der/listrr.pro.Sonarr){:target="_blank"} bridge to be able to import listrr.pro lists into your Sonarr instances
 - `Is Anime` filter to filter explicitly for anime movies or shows
@@ -25,11 +29,11 @@ There are also new donor perks for all the awesome people that donate! So check 
 
 
 
-## :bug: Bug Fixes:
+## :bug: Bug Fixes
 - A few small not noteworthy bugs were fixed :wink:
 
-## :notepad_spiral: Notes:
+## :notepad_spiral: Notes
 Nothing :shrug:
 
-## :exploding_head: Known issues:
+## :exploding_head: Known issues
 None, so far atleast... :heavy_check_mark:

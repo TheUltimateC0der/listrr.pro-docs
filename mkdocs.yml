@@ -5,17 +5,24 @@ edit_uri: edit/master/docs
 site_description: Documentation of all listrr.pro features and its api
 copyright: Copyright &copy; 2018 - 2022 listrr.pro
 plugins:
-  - rss
+  - rss:
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags 
   - blogging:
-      paging: false # Disable paging
+      dirs:
+        - blog
+      features:
+        tags:
+          index_page: blog-tags.md
+          insert: top
+      paging: true # Disable paging
       time_format: '%d.%m.%Y - %H:%M:%S' # The format used to display the time
       meta_time_format: '%d.%m.%Y - %H:%M:%S' # The format used to parse the time from meta
       locale: en-US
-      dirs: # The directories to be included
-        - blog
-  - blog:
-      format: "(%d.%m.%Y)"
-      text-align: "right"
   - section-index
   - search
   - render_swagger
@@ -54,7 +61,7 @@ extra:
 
 nav:
   - Home: index.md
-  - Blog: /blog
+  - Blog: blog
   - Filters: /filters
   - Services: /services
   - API: /api

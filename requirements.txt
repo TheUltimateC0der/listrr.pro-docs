@@ -1,6 +1,5 @@
 mkdocs-material
 mkdocs-render-swagger-plugin
 mkdocs-section-index
-mkdocs-blog-plugin
 mkdocs-blogging-plugin
 mkdocs-rss-plugin
