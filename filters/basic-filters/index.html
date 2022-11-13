@@ -9,24 +9,22 @@
         <meta name="description" content="Documentation of all listrr.pro features and its api">
       
       
-        <meta name="author" content="Ultimate">
       
+        <link rel="canonical" href="https://docs.listrr.pro/filters/basic-filters/">
       
-        <link rel="canonical" href="https://docs.listrr.pro/blog/2022/06/01/Update-v.2022.6.1.248/">
-      
-      <link rel="icon" href="../../../../../assets/logo.png">
+      <link rel="icon" href="../../assets/logo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>Update v.2022.6.1.248 is out now - Docs</title>
+        <title>Basic filters - Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.472b142f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.08040f6c.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
         
       
       
@@ -43,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#update-v202261248-is-out-now" class="md-skip">
+        <a href="#basic-filters" class="md-skip">
           Skip to content
         </a>
       
@@ -86,9 +84,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../../.." title="Docs" class="md-header__button md-logo" aria-label="Docs" data-md-component="logo">
+    <a href="../.." title="Docs" class="md-header__button md-logo" aria-label="Docs" data-md-component="logo">
       
-  <img src="../../../../../assets/logo.svg" alt="logo">
+  <img src="../../assets/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -104,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Update v.2022.6.1.248 is out now
+              Basic filters
             
           </span>
         </div>
@@ -203,7 +201,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../../../.." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -215,7 +213,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../../.." class="md-tabs__link">
+    <a href="../../blog" class="md-tabs__link">
       Blog
     </a>
   </li>
@@ -280,9 +278,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="Docs" class="md-nav__button md-logo" aria-label="Docs" data-md-component="logo">
+    <a href="../.." title="Docs" class="md-nav__button md-logo" aria-label="Docs" data-md-component="logo">
       
-  <img src="../../../../../assets/logo.svg" alt="logo">
+  <img src="../../assets/logo.svg" alt="logo">
 
     </a>
     Docs
@@ -310,7 +308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -325,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../blog" class="md-nav__link">
         Blog
       </a>
     </li>
@@ -387,7 +385,7 @@
               
                 
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -406,30 +404,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#new-features" class="md-nav__link">
-    New features
+  <a href="#limitations" class="md-nav__link">
+    Limitations
+  </a>
+  
+    <nav class="md-nav" aria-label="Limitations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logical-connection-on-field-level" class="md-nav__link">
+    Logical connection on field level
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#bug-fixes" class="md-nav__link">
-    Bug Fixes
+        
+          <li class="md-nav__item">
+  <a href="#logical-connection-on-list-level" class="md-nav__link">
+    Logical connection on list level
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    Notes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#known-issues" class="md-nav__link">
-    Known issues
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -447,59 +444,22 @@
                 
                   
 
-  <a href="https://github.com/TheUltimateC0der/listrr.pro-docs/edit/master/docs/blog/2022/06/01/Update-v.2022.6.1.248.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/TheUltimateC0der/listrr.pro-docs/edit/master/docs/filters/basic-filters.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<div class="blogging-tags-grid">
-
-        <a href="https://docs.listrr.pro/blog-tags#V2" class="blogging-tag"><code>#V2</code></a>
-
-        <a href="https://docs.listrr.pro/blog-tags#Patchnotes" class="blogging-tag"><code>#Patchnotes</code></a>
-
-    </div>
-
-<style>
-    .md-typeset .blogging-tags-grid {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 5px;
-    }
-
-    .md-typeset .blogging-tag {
-        color: var(--md-typeset-color);
-        background-color: var(--md-typeset-code-color);
-    }
-
-    .md-typeset .blogging-tag code {
-        border-radius: 5px;
-    }
-</style>
-<h1 id="update-v202261248-is-out-now">Update v.2022.6.1.248 is out now</h1>
-<h2 id="new-features"><img alt="🚀" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f680.svg" title=":rocket:" /> New features</h2>
-<ul>
-<li>You are now able to add your radarr instances. When adding a radarr instance, the URL and API Key you enter is saved encrypted in the database.</li>
-<li>When creating a list, you can select the radarr instances you want to add this list to.</li>
-<li>The <code>Management</code> menu has been extended to <code>Starr Instances</code> to manage your Radarr and Sonarr instances</li>
-<li>You are able to decide if you want to create your list on trakt.tv or not.</li>
-<li>You are now able to decide if you want to create your list on TMDb or not. (Implementation not done yet)</li>
-<li>You can choose to call notifiarr on updates. (Implementation not done yet)</li>
-</ul>
-<h2 id="bug-fixes"><img alt="🐛" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f41b.svg" title=":bug:" /> Bug Fixes</h2>
-<ul>
-<li>The <code>Last Processed</code> timestamp of a new created list was incorrect</li>
-<li>When a list isn´t populated yet, and the <code>Custom List</code> URL is added to radarr, the list will fail to add until the list is populated with items. This is now fixed. Even if the list is not populated, the list will be able to get saved</li>
-<li>A few small not noteworthy bugs were fixed</li>
-<li>Re-Added the /Donors/WhyDonate page</li>
-</ul>
-<h2 id="notes"><img alt="🗒" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f5d2.svg" title=":notepad_spiral:" /> Notes</h2>
-<p>Views have been consolidated internally. If you see a wrong labeled button or text input, please report.</p>
-<h2 id="known-issues"><img alt="🤯" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f92f.svg" title=":exploding_head:" /> Known issues</h2>
-<p>None, so far atleast...</p>
+<h1 id="basic-filters">Basic filters</h1>
+<p>Basic filters are for users that either want to quickly create a list, or simply dont want to wrap their head around the way more complex variant <a href="/filters/extensive-filters">Extensive-Filters</a>.</p>
+<h2 id="limitations">Limitations</h2>
+<p>Although Basic filters are a lot easier to create lists, they have some limitations.</p>
+<h3 id="logical-connection-on-field-level">Logical connection on field level</h3>
+<p>All values of a field are connected via the <code>AND</code> operator. So when you select the Genres <code>Action</code> and <code>Adventure</code>, only Movies/Shows that have <code>Action</code> AND <code>Adventure</code> set as genre will match your list.</p>
+<p>If you select <code>Netflix</code>, <code>Amazon</code>, <code>HBO+</code>, <code>Disney+</code> for the <code>Streaming Service - Flatrate</code> field, your list will result in items that will be available ONLY on all the selected plattforms. If there are items that are exclusive to one plattform, they wont be included.</p>
+<h3 id="logical-connection-on-list-level">Logical connection on list level</h3>
+<p>All fields are connected via the <code>AND</code> operator. For example: You select <code>Robert Downey Jr.</code> for the field <code>Actor</code>, and <code>James Cameron</code> for the field <code>Director</code>.</p>
+<p>The result would be a list where <code>Robert Downey Jr.</code> will be one of the actors, <code>AND</code> one of the directors is <code>James Cameron</code>.</p>
 
 
 
@@ -543,10 +503,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.expand", "navigation.tracking", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.tabs"], "search": "../../../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tracking", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
     
   </body>
