@@ -49,6 +49,7 @@ theme:
     - navigation.tabs
 markdown_extensions:
   - admonition
+  - footnotes
   - pymdownx.details
   - pymdownx.highlight
   - pymdownx.superfences
