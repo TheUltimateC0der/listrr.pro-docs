@@ -10,14 +10,14 @@
       
       
       
-        <link rel="canonical" href="https://docs.listrr.pro/services/sonarr/">
+        <link rel="canonical" href="https://docs.listrr.pro/services/sonarr-bridge/">
       
       <link rel="icon" href="../../assets/logo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>Sonarr - Docs</title>
+        <title>Sonarr Bridge Setup - Docs</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sonarr" class="md-skip">
+        <a href="#sonarr-bridge-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Sonarr
+              Sonarr Bridge Setup
             
           </span>
         </div>
@@ -266,9 +266,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -383,9 +381,7 @@
             
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -404,9 +400,77 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-add-a-list" class="md-nav__link">
-    How to add a list
+  <a href="#get-your-stuff-together" class="md-nav__link">
+    Get your stuff together
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-setup" class="md-nav__link">
+    General setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-docker-composeyml" class="md-nav__link">
+    Example docker-compose.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings-explained" class="md-nav__link">
+    Settings explained
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings explained">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sonarr-instance" class="md-nav__link">
+    Sonarr Instance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoimport" class="md-nav__link">
+    AutoImport
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-a-list-by-id" class="md-nav__link">
+    Import a list by ID
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-run-your-sonarr-bridge" class="md-nav__link">
+    How to run your Sonarr Bridge ?
+  </a>
+  
+    <nav class="md-nav" aria-label="How to run your Sonarr Bridge ?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-run" class="md-nav__link">
+    First Run
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -424,22 +488,147 @@
                 
                   
 
-  <a href="https://github.com/TheUltimateC0der/listrr.pro-docs/edit/master/docs/services/sonarr/index.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/TheUltimateC0der/listrr.pro-docs/edit/master/docs/services/sonarr-bridge/index.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="sonarr">Sonarr</h1>
-<p>The sonarr native integration allows you to add your sonarr instances that are available publicly on the internet to your listrr account. The added sonarr instances can be used to add your lists automatically via the <code>Custom Lists</code> feature available in sonarr.</p>
-<p>This feature makes it easier for users with many lists to automatically add them to their instances without manually adding each list one by one.</p>
-<h2 id="how-to-add-a-list">How to add a list</h2>
-<p>Take a look at the listrr.pro to Sonarr bridge. It will automatically import your lists into your Sonarr instance. <a href="https://github.com/TheUltimateC0der/listrr.pro.Sonarr">https://github.com/TheUltimateC0der/listrr.pro.Sonarr</a></p>
-<p>You can also find the documentation for setting it up <a href="/services/sonarr-bridge">here</a></p>
+<h1 id="sonarr-bridge-setup">Sonarr Bridge Setup</h1>
+<h2 id="get-your-stuff-together">Get your stuff together</h2>
+<p>For setting up the Sonarr bridge, you need the follwing:</p>
+<ol>
+<li>The domain/hostname/ip of your Sonarr instance</li>
+<li>The API Key of your Sonarr instance</li>
+<li>Your listrr.pro API Key which you can find <a href="https://listrr.pro/Identity/Account/Manage" target="_blank">here</a></li>
+<li>Docker installed on your server</li>
+<li>docker-compose installed on your server</li>
+<li>Create a directory for your sonarr bridge instance where you can store files for it</li>
+</ol>
+<h2 id="general-setup">General setup</h2>
+<p>In the directory you created for your sonarr bridge, create a file named <code>docker-compose.yml</code>. We will add the following content to it.</p>
+<h2 id="example-docker-composeyml">Example docker-compose.yml</h2>
+<div class="highlight"><pre><span></span><code>version: &quot;3.9&quot;
+
+services:
+  sonarrbridge:
+    image: ghcr.io/theultimatec0der/listrr.pro.sonarr:latest
+    environment:
+      # This is your Sonarr instance setting
+      - SonarrInstance__Url=https://sonarr.mydomain.tld
+      - SonarrInstance__ApiKey=YOUR-SONARR-API-KEY
+      # This is for automatically importing your own lists from your listrr.pro V2 account
+      - listrr__AutoImport__ImportLists=true
+      - listrr__AutoImport__ApiKey=YOUR-LISTRR-PRO-V2-API-KEY
+      - listrr__AutoImport__QualityProfileId=1
+      - listrr__AutoImport__RootFolderId=1
+      - listrr__AutoImport__LanguageProfileId=1
+      - listrr__AutoImport__Monitored=true
+      - listrr__AutoImport__SearchForMissingEpisodes=true
+      - listrr__AutoImport__SearchForCutoffUnmetEpisodes=true
+      - listrr__AutoImport__SeasonFolder=true
+      - listrr__AutoImport__Tags__0=1
+      - listrr__AutoImport__Tags__1=5
+      # This is for importing listrr.pro V2 lists by their Ids
+      - listrr__Lists__0__Id=A-LISTRR-V2-LIST-ID
+      - listrr__Lists__0__QualityProfileId=1
+      - listrr__Lists__0__RootFolderId=1
+      - listrr__Lists__0__LanguageProfileId=1
+      - listrr__Lists__0__Monitored=true
+      - listrr__Lists__0__SearchForMissingEpisodes=true
+      - listrr__Lists__0__SearchForCutoffUnmetEpisodes=true
+      - listrr__Lists__0__SeasonFolders=true
+      - listrr__Lists__0__Tags__0=1
+      - listrr__Lists__0__Tags__1=35
+      - listrr__Lists__0__Tags__2=50
+      - listrr__Lists__1__Id=A-LISTRR-V2-LIST-ID
+      - listrr__Lists__1__QualityProfileId=1
+      - listrr__Lists__1__RootFolderId=1
+      - listrr__Lists__1__LanguageProfileId=1
+      - listrr__Lists__1__Monitored=true
+      - listrr__Lists__1__SearchForMissingEpisodes=true
+      - listrr__Lists__1__SearchForCutoffUnmetEpisodes=true
+      - listrr__Lists__1__SeasonFolders=true
+      - listrr__Lists__1__Tags__0=1
+      - listrr__Lists__1__Tags__1=3
+      - listrr__Lists__1__Tags__2=7
+</code></pre></div>
+<h2 id="settings-explained">Settings explained</h2>
+<p>This <code>docker-compose.yml</code> is divided into multiple blocks. Each block has a seperate purpose. The purpose of each block is explained below.</p>
+<h3 id="sonarr-instance">Sonarr Instance</h3>
+<p><div class="highlight"><pre><span></span><code># This is your Sonarr instance setting
+- SonarrInstance__Url=https://sonarr.mydomain.tld
+- SonarrInstance__ApiKey=YOUR-SONARR-API-KEY
+</code></pre></div>
+These setting are used to talk to your Sonarr instance. </p>
+<p>The <code>SonarrInstance__Url</code> setting tells the Sonarr bridge where your Sonarr instance can be found. This setting is typically what you type in your browser to reach your Sonarr instance.</p>
+<p>The <code>SonarrInstance__ApiKey</code> is used to authenticate against the API of your Sonarr instance. You can get this from <code>https://sonarr.mydomain.tld/settings/general</code></p>
+<h3 id="autoimport">AutoImport</h3>
+<p><div class="highlight"><pre><span></span><code># This is for automatically importing your own lists from your listrr.pro V2 account
+- listrr__AutoImport__ImportLists=true
+- listrr__AutoImport__ApiKey=YOUR-LISTRR-PRO-V2-API-KEY
+- listrr__AutoImport__QualityProfileId=1
+- listrr__AutoImport__RootFolderId=1
+- listrr__AutoImport__LanguageProfileId=1
+- listrr__AutoImport__Monitored=true
+- listrr__AutoImport__SearchForMissingEpisodes=true
+- listrr__AutoImport__SearchForCutoffUnmetEpisodes=true
+- listrr__AutoImport__SeasonFolder=true
+- listrr__AutoImport__Tags__0=1
+- listrr__AutoImport__Tags__1=5
+</code></pre></div>
+These settings are important, if you want to import ALL Show lists from your listrr.pro account.</p>
+<p><code>listrr__AutoImport__ImportLists</code> is the setting you use to enable (<code>true</code>) or disable (<code>false</code>) the automatic import of ALL lists into your Sonarr instance.</p>
+<p><code>listrr__AutoImport__ApiKey</code> is used to authenticate against the listrr.pro API. That way the listrr.pro API knows which account requests stuff.</p>
+<p><code>listrr__AutoImport__QualityProfileId</code> is used to set everything that is imported to a specific Quality Profile.</p>
+<p><code>listrr__AutoImport__RootFolderId</code> is used to set everything that is imported to a specific Root folder.</p>
+<p><code>listrr__AutoImport__LanguageProfileId</code> is used to set everything that is imported to a specific Language profile.</p>
+<p><code>listrr__AutoImport__Monitored</code> is used to tell your Sonarr instance if a show gets added as monitored (<code>true</code>) or unmonitored (<code>false</code>).</p>
+<p><code>listrr__AutoImport__SearchForMissingEpisodes</code> is used to tell if your Sonarr instance should search (<code>true</code>) for episodes when the Sonarr bridge adds a show or not (<code>false</code>).</p>
+<p><code>listrr__AutoImport__SearchForCutoffUnmetEpisodes</code> is used to tell your Sonarr instance to search for Cutoff unmet (<code>true</code>) or not (<code>false</code>).</p>
+<p><code>listrr__AutoImport__SeasonFolder</code> is used to tell your Sonarr instance to create a folder for each season (<code>true</code>) or not (<code>false</code>).</p>
+<p><code>listrr__AutoImport__Tags__0</code> is used to add Tags to a show when adding it to your Sonarr instance. Be aware to bump the number for each Tag you add. </p>
+<h3 id="import-a-list-by-id">Import a list by ID</h3>
+<p><div class="highlight"><pre><span></span><code># This is for importing listrr.pro V2 lists by their Ids
+- listrr__Lists__0__Id=A-LISTRR-V2-LIST-ID
+- listrr__Lists__0__QualityProfileId=1
+- listrr__Lists__0__RootFolderId=1
+- listrr__Lists__0__LanguageProfileId=1
+- listrr__Lists__0__Monitored=true
+- listrr__Lists__0__SearchForMissingEpisodes=true
+- listrr__Lists__0__SearchForCutoffUnmetEpisodes=true
+- listrr__Lists__0__SeasonFolders=true
+- listrr__Lists__0__Tags__0=1
+- listrr__Lists__0__Tags__1=35
+- listrr__Lists__0__Tags__2=50
+</code></pre></div>
+This will allow you to import a single list by the ID you get from listrr.pro. You can take a look for existing lists at <a href="https://listrr.pro/Home/Lists" target="_blank">https://listrr.pro/Home/Lists</a>. Hit the share button to copy the ID of a list.</p>
+<p>For each list, you have to bump the number <code>Lists__0__</code>. So if you have 2 lists, you start with <code>Lists__0__</code> for the first list, and <code>Lists__1__</code> for your second list, and so on.</p>
+<p><code>listrr__Lists__0__Id</code> is used to tell the Sonarr bridge the ID of your list. For example: <code>6374d7332d52d9b21fd91f86</code></p>
+<p><code>listrr__Lists__0__QualityProfileId</code> is used to set everything that is imported to a specific Quality Profile.</p>
+<p><code>listrr__Lists__0__RootFolderId</code> is used to set everything that is imported to a specific Root folder.</p>
+<p><code>listrr__Lists__0__LanguageProfileId</code> is used to set everything that is imported to a specific Language profile.</p>
+<p><code>listrr__Lists__0__Monitored</code> is used to tell your Sonarr instance if a show gets added as monitored (<code>true</code>) or unmonitored (<code>false</code>).</p>
+<p><code>listrr__Lists__0__SearchForMissingEpisodes</code> is used to tell if your Sonarr instance should search (<code>true</code>) for episodes when the Sonarr bridge adds a show or not (<code>false</code>).</p>
+<p><code>listrr__Lists__0__SearchForCutoffUnmetEpisodes</code> is used to tell your Sonarr instance to search for Cutoff unmet (<code>true</code>) or not (<code>false</code>).</p>
+<p><code>listrr__Lists__0__SeasonFolders</code> is used to tell your Sonarr instance to create a folder for each season (<code>true</code>) or not (<code>false</code>).</p>
+<p><code>listrr__Lists__0__Tags__0</code> is used to add Tags to a show when adding it to your Sonarr instance. Be aware to bump the number for each Tag you add.</p>
+<h2 id="how-to-run-your-sonarr-bridge">How to run your Sonarr Bridge ?</h2>
+<h3 id="first-run">First Run</h3>
+<p>Copy the content of the example <code>docker-compose.yml</code> and save it in the directory you created earlier.</p>
+<p>Set your Sonarr Instance settings, and your listrr.pro API key. Save the file.</p>
+<p>In the directory where the <code>docker-compose.yml</code> file is saved, execute <code>docker-compose up</code>. Sonarr Bridge will now get all you need from your Sonarr instance to set <code>QualityProfileId</code>, <code>RootFolderId</code>, <code>LanguageProfileId</code>, and <code>Tags</code>.</p>
+<p>There should be an output similar to this:
+<div class="highlight"><pre><span></span><code>LOG: Connecting to Sonarr: https://sonarr.mydomain.tld with API Key: &#39;MY-SONARR-API-KEY&#39;
+INFO: Found QualityProfile 1:1080p
+INFO: Found RootFolder 5:/mnt/unionfs/Media/TV
+INFO: Found LanguageProfile 1:English
+</code></pre></div></p>
+<p>You can see the lines <code>INFO: Found QualityProfile 1:1080p</code> where the the left part of <code>1:1080p</code> is the Id, and the right part is the name of the quality profile of your sonarr instance. This will be the same for <code>RootFolderId</code>, <code>LanguageProfileId</code>, and <code>Tags</code>.</p>
+<p>Hit CTRL+C on your keyboard to stop the Sonarr Bridge. Edit your <code>docker-compose.yml</code> to add the <code>QualityProfileId</code>, <code>RootFolderId</code>, <code>LanguageProfileId</code>, and <code>Tags</code> for your lists or AutoImport.</p>
+<p>Execute <code>docker-compose up</code>. Your Sonarr Bridge should now run.</p>
 
 
-
-  
 
 
 
