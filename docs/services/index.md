@@ -23,5 +23,8 @@ Here you can populate your lists to. These services are good, if you want to use
 ## Sonarr
 Have a look [here](/services/sonarr) for further explanation.
 
+## Sonarr Bridge
+The [Sonarr Bridge](/services/sonarr-bridge) is used to import listrr.pro lists into your Sonarr instance.
+
 ## Radarr
 Have a look [here](/services/radarr) for further explanation.
