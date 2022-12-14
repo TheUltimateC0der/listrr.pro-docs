@@ -39,7 +39,7 @@ What we store:
 
 How do we use this data:
 
-- We use the username of your Trakt.tv user account as a username of your listrr.pro account.
+- We use the username of your Trakt.tv user account as a username of your listrr.pro account. If you choose another provider, this will be used as a unique identifier since Trakt.tv does not provide anything else to uniquely identify a user.
 - We use the access token for your trakt.tv user account to create/update/delete lists on your trakt.tv account that are connected to listrr.pro
 - The refresh token for your trakt.tv user account to get a new access token before it expires
 - We use the expiration date of the access and refresh token to aquire a new set of access and refresh token before it expires
@@ -47,27 +47,33 @@ How do we use this data:
 ### Github.com
 What we store:
 
+- The username of your Github.com user account
 - The Id of your Github.com user account
 
 How do we use this data:
 
+- We use the username of your Github.com user account as a username of your listrr.pro account, only if you create your account with this provider. Otherwise this gets ignored.
 - We use the the Id of your Github.com user account to match it against all Github.com account Ids that donated on Github.com. This way we determine if you donated and what benefits you get.
 
 ### Patreon.com
 What we store:
 
+- The username of your Patreon.com user account
 - The Id of your Patreon.com user account
 
 How do we use this data:
 
+- We use the username of your Patreon.com user account as a username of your listrr.pro account, only if you create your account with this provider. Otherwise this gets ignored.
 - We use the the Id of your Patreon.com user account to match it against all Patreon.com account Ids that donated on Patreon.com. This way we determine if you donated and what benefits you get.
 
 
 ### Discord.com
 What we store:
 
+- The username of your Discord.com user account
 - The Id of your Discord.com user account
 
 How do we use this data:
 
+- We use the username of your Discord.com user account as a username of your listrr.pro account, only if you create your account with this provider. Otherwise this gets ignored.
 - We use the the Id of your Discord.com user account to assign you to the correct role after you donated.
