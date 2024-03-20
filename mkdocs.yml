@@ -6,12 +6,12 @@ site_description: Documentation of all listrr.pro features and its api
 copyright: Copyright &copy; 2018 - 2022 listrr.pro
 plugins:
   - rss:
-      match_path: blog/posts/.* 
+      match_path: blog/posts/.*
       date_from_meta:
         as_creation: date
       categories:
         - categories
-        - tags 
+        - tags
   - blogging:
       dirs:
         - blog
@@ -20,8 +20,8 @@ plugins:
           index_page: blog-tags.md
           insert: top
       paging: true # Disable paging
-      time_format: '%d.%m.%Y - %H:%M:%S' # The format used to display the time
-      meta_time_format: '%d.%m.%Y - %H:%M:%S' # The format used to parse the time from meta
+      time_format: "%d.%m.%Y - %H:%M:%S" # The format used to display the time
+      meta_time_format: "%d.%m.%Y - %H:%M:%S" # The format used to parse the time from meta
       locale: en-US
   - section-index
   - search
@@ -30,7 +30,8 @@ theme:
   name: material
   logo: assets/logo.svg
   favicon: assets/logo.png
-  font: Open Sans
+  font:
+    text: Open Sans
   palette:
     - scheme: default
       toggle:
@@ -55,8 +56,8 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 extra:
   generator: false
 
@@ -66,4 +67,3 @@ nav:
   - Filters: /filters
   - Services: /services
   - API: /api
-  
